@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1 id="title">Sodas</h1>
+            <a href="#" id="add-link">+</a>
+        </header>
+
+        <div id="add-soda" class="dialog transparent">
+            <span class="close">&times;</span>
+
+            <h3 id="add-title">Soda</h3>
+            <form id="add-soda-form" method="post">
+                <input type="hidden" name="_id" value="-1" />
+                <p>
+                    <label for="name">Soda Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </p>
+                <p>
+                    <label for="sugar">Sugar Content:</label>
+                    <input type="text" id="sugar" name="sugar" required />
+                </p>
+                <p>
+                    <label for="calories">Total Calories:</label>
+                    <input type="text" id="calories" name="calories" required />
+                </p>
+                <p>
+                    <label for="oz">Ounces:</label>
+                    <input type="text" id="oz" name="oz" required />
+                </p>
+                <p id="sub-types-p">
+                    <label class="inline">Sub Types:</label>
+                    <a href="#" id="add-type">Add Type</a>
+                    <section id="type-boxes"></section>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+        <div id="result"></div>
+
+        <div class="two-columns">
+            <div id="soda-div" class="columns"></div>
+            <div id="information">
+                <h2>Information</h2>
+
+                <div id="soda-info">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

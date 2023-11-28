@@ -1,0 +1,139 @@
+/* Structure */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3E4E3;
+    color: #6E1019;
+}
+
+#title {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#soda-div section {
+    padding: 10px;
+    background: #083F72;
+    border-radius: 5px;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+
+.columns section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 200px;
+}
+
+#soda-info {
+    padding: 10px;
+    padding-left: 15px;
+    margin: 10px;
+    background: #083F72;
+    border-radius: 5px;
+    color: #D1882E;
+}
+
+#information h2 {
+    padding-left: 15px;
+}
+
+#add-link {
+    font-size: 2.5em;
+    color: #6E1019;
+    padding-left: 10px;
+}
+
+#edit-link {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#delete-link {
+    float: right;
+    cursor: pointer;
+}
+
+#add-soda {
+    padding: 10px;
+    margin: 10px;
+    background: #083F72;
+    border-radius: 5px;
+}
+
+/* Form */
+
+label {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+#sub-types-p input {
+    margin-top: 5px;
+}
+
+#add-soda {
+    color: #E2BE92;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+#add-title {
+    color: #D1882E;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* The Close Button */
+
+.close {
+    color: #E2BE92;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #6E1019;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Typography */
+
+#main-nav-items {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: #D1882E;
+}
+
+.hidden {
+    display: none;
+}
+
+.transparent {
+    display: none;
+}
+
+#result {
+    text-align: center;
+}
