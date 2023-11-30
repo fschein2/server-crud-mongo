@@ -101,7 +101,8 @@ const sodaSchema = new mongoose.Schema({
     sugar: String,
     calories: String,
     oz: String,
-    subTypes: [String]
+    subTypes: [String],
+    img: String
 });
 
 const Soda = mongoose.model("Soda", sodaSchema);
@@ -131,6 +132,10 @@ app.post("/api/sodas", upload.single("img"), (req, res) => {
         subTypes: req.body.subTypes.split(","),
     });
 
+    if (req.file) {
+        soda.img = "images/" + req.file.filename;
+    }
+
     createSoda(soda, res);
 });
 
@@ -157,6 +162,10 @@ const updateSoda = async (req, res) => {
         calories: req.body.calories,
         oz: req.body.oz,
         subTypes: req.body.subTypes.split(","),
+    };
+
+    if (req.file) {
+        soda.img = "images/" + req.file.filename;
     }
 
     const result = await Soda.updateOne({_id: req.params.id}, fieldsToUpdate);

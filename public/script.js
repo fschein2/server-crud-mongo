@@ -22,6 +22,10 @@ const showSodas = async() => {
         h3.innerHTML = soda.name;
         a.append(h3);
 
+        const img = document.createElement("img");
+        img.src = soda.img;
+        section.append(img);
+
         a.onclick = (e) => {
             e.preventDefault();
             displayInfo(soda);

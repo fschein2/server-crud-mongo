@@ -34,6 +34,12 @@ h2 {
     width: 200px;
 }
 
+img {
+    max-width: 100%;
+    border: 3px solid #6E1019;
+    border-radius: 5px;
+}
+
 #soda-info {
     padding: 10px;
     padding-left: 15px;
@@ -95,6 +101,11 @@ label {
     color: #D1882E;
     text-align: left;
     padding-left: 10px;
+}
+
+#upload {
+    padding-left: 55px;
+    color: #D1882E;
 }
 
 /* The Close Button */
